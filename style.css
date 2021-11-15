@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background-color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+}
+img {
+  width: 740px;
+  height: 740px;
+}
+#kick {
+  width: 130px;
+  height: 150px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 400px;
+  left: 370px;
+}
+#snare {
+  height: 145px;
+  width: 133px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 410px;
+  left: 230px;
+}
+#hh {
+  height: 120px;
+  width: 170px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 306px;
+  left: 30px;
+}
+#tom1 {
+  height: 100px;
+  width: 105px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 306px;
+  left: 330px;
+}
+#tom2 {
+  height: 100px;
+  width: 105px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 316px;
+  left: 450px;
+}
+#tom3 {
+  height: 115px;
+  width: 115px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 424px;
+  left: 510px;
+}
+#crash {
+  height: 120px;
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 130px;
+  left: 215px;
+}
+#ride {
+  height: 120px;
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  left: 507px;
+}
+
+@keyframes splash {
+  from {
+    transform: scale(1.2);
+    background-color: lightgray;
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.hit {
+  animation: splash 0.1s ease;
+}
+
+@keyframes splash-2 {
+  from {
+    transform: scale(1.2);
+    background-color: lightgray;
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.rehit {
+  animation: splash-2 0.1s ease;
+}
