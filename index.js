@@ -23,8 +23,13 @@ drums.forEach((drum) => {
   });
 });
 
+const handleKeys = (e) => {
+  console.log(e);
+};
 
-k -> kick
+document.addEventListener('keypress', handleKeys);
+
+/* k -> kick
 s -> snare
 h -> hh
-
+ */
