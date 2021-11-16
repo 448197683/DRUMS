@@ -22,7 +22,6 @@ img {
 #kick {
   width: 130px;
   height: 150px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 400px;
@@ -31,7 +30,6 @@ img {
 #snare {
   height: 145px;
   width: 133px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 410px;
@@ -40,7 +38,6 @@ img {
 #hh {
   height: 120px;
   width: 170px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 306px;
@@ -49,7 +46,6 @@ img {
 #tom1 {
   height: 100px;
   width: 105px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 306px;
@@ -58,7 +54,6 @@ img {
 #tom2 {
   height: 100px;
   width: 105px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 316px;
@@ -67,7 +62,6 @@ img {
 #tom3 {
   height: 115px;
   width: 115px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 424px;
@@ -76,7 +70,6 @@ img {
 #crash {
   height: 120px;
   width: 150px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 130px;
@@ -85,7 +78,6 @@ img {
 #ride {
   height: 120px;
   width: 150px;
-  border: 1px solid red;
   border-radius: 50%;
   position: absolute;
   top: 140px;

@@ -10,6 +10,8 @@ const clearCSSEffect = () => {
 };
 
 const stroke = (target) => {
+  document.querySelector(`#${target}`).classList.add('hit');
+  document.querySelector(`#${target}`).classList.toggle('rehit');
   drumSound.src = `audio/${target}.wav`;
   drumSound.play();
   drumSound.currentTime = 0;
@@ -25,30 +27,32 @@ drums.forEach((drum) => {
 });
 
 const handleKeys = (e) => {
-  if (e.key === `k`) {
-    drumSound.src = `audio/kick.wav`;
-    drumSound.play();
-  } else if (e.key === `s`) {
-    drumSound.src = `audio/snare.wav`;
-    drumSound.play();
-  } else if (e.key === `h`) {
-    drumSound.src = `audio/hh.wav`;
-    drumSound.play();
-  } else if (e.key === `t`) {
-    drumSound.src = `audio/tom1.wav`;
-    drumSound.play();
-  } else if (e.key === `y`) {
-    drumSound.src = `audio/tom2.wav`;
-    drumSound.play();
-  } else if (e.key === `u`) {
-    drumSound.src = `audio/tom3.wav`;
-    drumSound.play();
-  } else if (e.key === `c`) {
-    drumSound.src = `audio/crash.wav`;
-    drumSound.play();
-  } else if (e.key === `r`) {
-    drumSound.src = `audio/ride.wav`;
-    drumSound.play();
+  console.log(e.key);
+  switch (e.key) {
+    case 'k':
+      stroke('kick');
+      break;
+    case 's':
+      stroke('snare');
+      break;
+    case 'h':
+      stroke('hh');
+      break;
+    case 't':
+      stroke('tom1');
+      break;
+    case 'y':
+      stroke('tom2');
+      break;
+    case 'u':
+      stroke('tom3');
+      break;
+    case 'c':
+      stroke('crash');
+      break;
+    case 'r':
+      stroke('ride');
+      break;
   }
 };
 
