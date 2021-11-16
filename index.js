@@ -1,8 +1,6 @@
 const drums = document.querySelectorAll('.drum');
 const drumSound = new Audio();
 
-let handleKey = '';
-
 const clearCSSEffect = () => {
   drums.forEach((drum) => {
     drum.classList.remove('hit');
